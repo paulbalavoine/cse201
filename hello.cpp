@@ -2,7 +2,7 @@
 
 int main(){
 
-    std::cout << "Hello Paris!" << std::endl;
+    std::cout << "Hello Ecole Polytechnique!" << std::endl;
 
     return 0;
 
