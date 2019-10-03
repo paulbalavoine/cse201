@@ -1,2 +1,1 @@
-# cse201
-Repository for the CSE201 course
+This is readme.txt
