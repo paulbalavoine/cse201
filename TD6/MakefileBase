@@ -1,0 +1,17 @@
+CXX = g++
+
+Base.o: Base.cpp Base.hpp
+	$(CXX) -c Base.cpp
+
+Derived.o: Derived.cpp Derived.hpp
+	$(CXX) -c Derived.cpp
+
+main.o: main.cpp
+	$(CXX) -c main.cpp
+
+main: Base.o Derived.o main.o
+	$(CXX) Base.o Derived.o main.o -o main
+
+clean:
+	rm -f main.cpp
+	rm -f *.o
